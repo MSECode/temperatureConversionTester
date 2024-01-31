@@ -2,13 +2,13 @@
 
 int main(int argc, char * argv[])
 {
-    TemperatureConvRuleTester tcrt("PT1000");
+    TemperatureConvRuleTester tcrt("PT100");
     // tcrt.writeInputTemperatures();
     // tcrt.convertTempCelsiusToRaw();
     // tcrt.writeOutputTemperatures();
-    tcrt.readInputTemperatures("data/inputTempData_PT1000.txt");
+    tcrt.readInputTemperatures("data/inputTempData_PT100.txt");
     tcrt.convertRawToTempCelsius();
     tcrt.convertTempCelsiusToRaw();
-    tcrt.writeOutputTemperatures("data/outputTempData_PT1000.txt");
+    tcrt.writeOutputTemperatures("data/outputTempData_PT100.txt");
     return 0;
 }

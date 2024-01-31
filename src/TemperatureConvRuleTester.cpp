@@ -157,6 +157,7 @@ void TemperatureConvRuleTester::writeOutputTemperatures(std::string filename)
         std::setw(20) << "iTemp [Celsius]" <<
         std::setw(20) << "iTemp [Raw]" << 
         std::setw(20) << "oTemp [Celsius]" <<
+        std::setw(20) << "oTemp [Raw]" <<
         std::setw(20) << "Delta [Celsius]" << 
         std::setw(20) << "Delta [Raw]" << std::endl; 
         for (int i = 0; i < _outputTemperature.size(); ++i)
@@ -165,6 +166,7 @@ void TemperatureConvRuleTester::writeOutputTemperatures(std::string filename)
             std::setw(20) << _inputTemperature.at(i) <<
             std::setw(20) << _inputRawTemperature.at(i) <<
             std::setw(20) << _outputTemperature.at(i) <<
+            std::setw(20) << _outputRawTemperature.at(i) <<
             std::setw(20) << _deltaCelsius.at(i) <<
             std::setw(20) << _deltaRaw.at(i) << std::endl;
         }
