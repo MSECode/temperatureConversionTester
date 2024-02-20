@@ -25,13 +25,7 @@ int main(int argc, char * argv[])
         std::cout << "Starting conversion program for sensor type " << argv[1] << ", passing values in file " << argv[2] << " and expecting outputs in file " << argv[3] << "\n";
     }
     
-    
-    
-    
     TemperatureConvRuleTester tcrt(sensorType);
-    // tcrt.writeInputTemperatures();
-    // tcrt.convertTempCelsiusToRaw();
-    // tcrt.writeOutputTemperatures();
     tcrt.readInputTemperatures(inputFilename);
     tcrt.convertRawToTempCelsius();
     tcrt.convertTempCelsiusToRaw();
